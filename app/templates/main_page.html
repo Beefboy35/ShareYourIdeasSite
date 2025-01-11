@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShareYourIdeas</title>
+</head>
+<link rel="stylesheet" href="static/styles/main_page.css" type="text/css">
+<body>
+<div class="content">
+    <div class="header">
+        <h1 id="header-text" onclick="GetRegForm()">The place, where you can share your creativity!</h1>
+    </div>
+    <div class="ideas-background">
+        <div class="form-content">
+            <input class="title-input" type="text" placeholder="Enter your title">
+            <input class="description-input" type="text" placeholder="Enter your description">
+            <div class="result" style="text-align: center;"></div>
+            <button class="create-idea">Create</button>
+            <button class="close-button">Close</button>
+        </div>
+    </div>
+    <div class="ideas-background">
+        <div class="form-content">
+            <input class="title-input" type="text" placeholder="Enter your title">
+            <input class="description-input" type="text" placeholder="Enter your description">
+            <div class="result" style="text-align: center;"></div>
+            <button class="create-idea">Update</button>
+            <button class="close-button">Close</button>
+        </div>
+    </div>
+    <div class="ideas-background">
+        <div class="form-content">
+            <input class="title-input" type="text" placeholder="Enter your title">
+            <div class="result" style="text-align: center;"></div>
+            <button class="create-idea">Delete</button>
+            <button class="close-button">Close</button>
+        </div>
+    </div>
+    <div class="ideas-background">
+        <div class="form-content">
+            <div class="message"></div>
+            <div class="ideas-background">
+                <div class="result"></div>
+                <button class="close-button">Close</button>
+            </div>
+            <button class="create-idea">Get all ideas</button>
+            <button class="create-idea">Delete all ideas</button>
+            <button class="close-button">Close</button>
+        </div>
+    </div>
+
+
+    <div class="info-block">
+        <div class="tooltip-trigger">
+            What is this?<em class="tooltip-content">You can search for any existing ideas on the site by any letters or words. Ideas that contain your symbols will be displayed</em>
+        </div>
+        <input type="text" placeholder="Some idea" id="ideaInput">
+        <button id="ideaButton" onclick="getIdeasByDescr()">Search</button>
+        <div id="ideaBlock"></div>
+    </div>
+    <div class="show-sidebar" onclick="toggleSidebar()">Main menu</div>
+    <div class="sidebar">
+        <h4 onclick="GetRegForm()">Sign up</h4>
+        <h4 onclick="GetLogInForm()">Sign in</h4>
+        <h4 onclick="getProfile()">Profile</h4>
+        <h4 onclick="createIdeaButton()">Create idea</h4>
+        <h4 onclick="updateIdeaButton()">Update idea</h4>
+        <h4 onclick="deleteIdeaButton()">Delete idea</h4>
+        <h4 onclick="forAdmins()">For admins</h4>
+        <h4 onclick="LogOut()">Sign out</h4>
+    </div>
+</div>
+<div class="footer">
+    <h1 class="author-icon">Have any questions or improvements? Contact author: <b><a href="https://t.me/RealBeefBoy"
+                                                                                      target="_blank">Author</a></b>
+    </h1>
+</div>
+<script src="static/js/main_page.js"></script>
+</body>
+</html>

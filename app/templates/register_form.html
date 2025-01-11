@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/styles/auth.css" type="text/css">
+</head>
+<body>
+<div id="main-container">
+    <h1>Registration</h1>
+    <form id="data-form" class="form-input">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <label for="passwordConfirm">Confirm your password:</label>
+        <input type="password" id="passwordConfirm" name="passwordConfirm" required>
+        <label for="nickname">Nickname:</label>
+        <input type="text" id="nickname" name="nickname" required>
+        <label for="first_name">First name:</label>
+        <input type="text" id="first_name" name="first_name" required>
+        <label for="last_name">Last name:</label>
+        <input type="text" id="last_name" name="last_name" required>
+        <button type="submit" id="reg-button" class="submit-button" onclick="regFunction(event)">register</button>
+        <button class="submit-button" onclick="getMain()">Main</button>
+        <button class="submit-button" onclick="GetLogInForm()">I already have an account</button>
+    </form>
+</div>
+<script src="static/js/auth.js"></script>
+</body>
+</html>

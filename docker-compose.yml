@@ -1,0 +1,22 @@
+services:
+  db:
+    image: postgres:16
+    container_name: app_db
+    command: -p 5433
+    expose:
+      - 5433
+    env_file:
+      - .env
+
+
+  app:
+    depends_on:
+      - db
+    build:
+      context: .
+    container_name: my_site
+    env_file:
+      - .env
+    command: ["/code/docker/app.sh"]
+    ports:
+      - 1333:8000

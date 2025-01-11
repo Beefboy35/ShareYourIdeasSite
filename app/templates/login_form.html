@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <link rel="stylesheet" type="text/css" href="static/styles/auth.css">
+</head>
+<body>
+<div id="main-container">
+    <h1>Sign in</h1>
+    <form id="data-form" class="form-input">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit" id="login-button" class="submit-button" onclick="loginFunction(event)">Enter</button>
+        <button class="submit-button" onclick="getMain()">Main</button>
+        <button class="submit-button" onclick="GetRegForm()">I don't have an account</button>
+    </form>
+</div>
+<script src="static/js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+body {
+    font-family: cursive;
+    background-color: bisque;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Контейнер для формы */
+#main-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, white, black);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок страницы */
+h1 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+}
+
+/* Стили формы */
+#data-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Поля ввода */
+.form-input label {
+    margin-bottom: 5px;
+    font-weight: bold;
+
+}
+
+.form-input input[type="email"],
+.form-input input[type="password"],
+.form-input input[type="text"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Кнопка отправки */
+.submit-button {
+  margin: 15px;
+  padding: 15px 40px;
+  border: none;
+  outline: none;
+  color: #FFF;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+}
+.submit-button::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+/* glow */
+.submit-button::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #FF0000, #FF7300, #FFFB00, #48FF00,
+    #00FFD5, #002BFF, #FF00C8, #FF0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height:  calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+@keyframes glowing {
+  0% {background-position: 0 0;}
+  50% {background-position: 400% 0;}
+  100% {background-position: 0 0;}
+}
+
+/* hover */
+.submit-button:hover::before {
+  opacity: 1;
+}
+
+.submit-button:active:after {
+  background: transparent;
+}
+
+.submit-button:active {
+  color: #000;
+  font-weight: boldsubmit-button

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/styles/profile.css">
+</head>
+<body>
+<div class="ideas-background">
+    <div class="form-content">
+        <div class="result"></div>
+        <button class="close-ideas">Close</button>
+    </div>
+</div>
+<div id="user-info-block">
+    <h5>
+        Nickname: {{ user.nickname }}
+    </h5>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" id="fileInput" accept="image/">
+            <button type="submit" id ="submitButton">Upload</button>
+            <button type="button" id="closeButton">Delete</button>
+        </form>
+        <div id="userAva"></div>
+    <h5>
+        First name: {{ user.first_name }}
+    </h5>
+    <h5>
+        Last name: {{ user.last_name }}
+    </h5>
+    <h5>
+        Role: {{ user.role }}
+    </h5>
+    <h5>
+        Ideas: {{ ideas }}
+    </h5>
+    <button class='info-button' onclick="GetMyIdeas()">My ideas</button>
+    <button class='info-button' onclick="LogOut()">Sign Out</button>
+    <button class='info-button' onclick="getMain()">Main page</button>
+</div>
+<script src="static/js/profile.js"></script>
+</body>
+</html>
