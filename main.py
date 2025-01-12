@@ -57,17 +57,10 @@ async def get_profile(req: Request, session: UserRepository = Depends(get_user_r
 
 
 
-# (Этот код должен быть скрыт в .env файле)
-# На самом деле эти ключи лучше хранить в переменных окружения
-# import os
-# from dotenv import load_dotenv
-# load_dotenv()
 
-# aws_access_key_id = os.getenv("AWS_ACCESS_KEY_ID")
-# aws_secret_access_key = os.getenv("AWS_SECRET_ACCESS_KEY")
 
 
 
 
 if __name__ == "__main__":
-    run("main:app", host="localhost", port=8000, reload=True)  # set some "debug=True" for development
+    run("main:app", host="localhost", port=8004, reload=True)

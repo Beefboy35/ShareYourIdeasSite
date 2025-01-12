@@ -17,9 +17,9 @@ class Settings(BaseSettings):
     ACCESS_TOKEN_EXPIRES_IN: int
     REFRESH_TOKEN_EXPIRES_IN: int
     JWT_ALGORITHM: str
-    POSTGRES_PASSWORD: str
-    POSTGRES_USER: str
-    POSTGRES_DB: str
+    POSTGRES_PASSWORD: str #same as DB_PASS
+    POSTGRES_USER: str #same as DB_USER
+    POSTGRES_DB: str #same as DB_PASS
 
     model_config = SettingsConfigDict(env_file=".env")
 

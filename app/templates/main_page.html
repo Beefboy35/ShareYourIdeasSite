@@ -51,11 +51,13 @@
 
 
     <div class="info-block">
-        <div class="tooltip-trigger">
+        <div class="block-content">
+            <div class="tooltip-trigger">
             What is this?<em class="tooltip-content">You can search for any existing ideas on the site by any letters or words. Ideas that contain your symbols will be displayed</em>
+            </div>
+            <input type="text" placeholder="Some idea" id="ideaInput">
+            <button id="ideaButton" onclick="getIdeasByDescr()">Search</button>
         </div>
-        <input type="text" placeholder="Some idea" id="ideaInput">
-        <button id="ideaButton" onclick="getIdeasByDescr()">Search</button>
         <div id="ideaBlock"></div>
     </div>
     <div class="show-sidebar" onclick="toggleSidebar()">Main menu</div>
