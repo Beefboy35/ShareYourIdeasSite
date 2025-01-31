@@ -9,6 +9,6 @@
 <li>Запустите файл main.py</li>
 </ol>
   <h3>Скриншоты можно посмотреть в папке description</h3>  
-  https://github.com/Beefboy35/ShareYourIdeasSite/blob/main/description/2025-01-31_08-52-33.png
+  <img src="https://github.com/Beefboy35/ShareYourIdeasSite/blob/main/description/2025-01-31_08-52-33.png">
 <h2>Enjoy your sharing!</h2>
 </div>
