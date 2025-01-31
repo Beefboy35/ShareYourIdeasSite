@@ -1,0 +1,468 @@
+2025-01-31 08:51:06,495 - INFO - Request: GET http://localhost:8004/ - my_app
+2025-01-31 08:51:06,495 - INFO - Request: GET http://localhost:8004/ - my_app
+2025-01-31 08:51:06,499 - INFO - Response: 200 Additional Info: GET http://localhost:8004/ - my_app
+2025-01-31 08:51:06,499 - INFO - Response: 200 Additional Info: GET http://localhost:8004/ - my_app
+2025-01-31 08:51:06,532 - INFO - Request: GET http://localhost:8004/static/styles/main_page.css - my_app
+2025-01-31 08:51:06,532 - INFO - Request: GET http://localhost:8004/static/styles/main_page.css - my_app
+2025-01-31 08:51:06,533 - INFO - Request: GET http://localhost:8004/static/js/main_page.js - my_app
+2025-01-31 08:51:06,533 - INFO - Request: GET http://localhost:8004/static/js/main_page.js - my_app
+2025-01-31 08:51:06,577 - INFO - Response: 200 Additional Info: GET http://localhost:8004/static/styles/main_page.css - my_app
+2025-01-31 08:51:06,577 - INFO - Response: 200 Additional Info: GET http://localhost:8004/static/styles/main_page.css - my_app
+2025-01-31 08:51:06,578 - INFO - Response: 200 Additional Info: GET http://localhost:8004/static/js/main_page.js - my_app
+2025-01-31 08:51:06,578 - INFO - Response: 200 Additional Info: GET http://localhost:8004/static/js/main_page.js - my_app
+2025-01-31 08:51:06,583 - INFO - Request: GET http://localhost:8004/static/images/main-background.jpg - my_app
+2025-01-31 08:51:06,583 - INFO - Request: GET http://localhost:8004/static/images/main-background.jpg - my_app
+2025-01-31 08:51:06,584 - INFO - Response: 200 Additional Info: GET http://localhost:8004/static/images/main-background.jpg - my_app
+2025-01-31 08:51:06,584 - INFO - Response: 200 Additional Info: GET http://localhost:8004/static/images/main-background.jpg - my_app
+2025-01-31 08:51:06,654 - INFO - Request: GET http://localhost:8004/favicon.ico - my_app
+2025-01-31 08:51:06,654 - INFO - Request: GET http://localhost:8004/favicon.ico - my_app
+2025-01-31 08:51:06,655 - INFO - Response: 404 Additional Info: GET http://localhost:8004/favicon.ico - my_app
+2025-01-31 08:51:06,655 - INFO - Response: 404 Additional Info: GET http://localhost:8004/favicon.ico - my_app
+2025-01-31 08:52:54,463 - INFO - Request: GET http://localhost:8004/register - my_app
+2025-01-31 08:52:54,463 - INFO - Request: GET http://localhost:8004/register - my_app
+2025-01-31 08:52:54,467 - INFO - Response: 200 Additional Info: GET http://localhost:8004/register - my_app
+2025-01-31 08:52:54,467 - INFO - Response: 200 Additional Info: GET http://localhost:8004/register - my_app
+2025-01-31 08:52:54,505 - INFO - Request: GET http://localhost:8004/static/styles/auth.css - my_app
+2025-01-31 08:52:54,505 - INFO - Request: GET http://localhost:8004/static/styles/auth.css - my_app
+2025-01-31 08:52:54,506 - INFO - Request: GET http://localhost:8004/static/js/auth.js - my_app
+2025-01-31 08:52:54,506 - INFO - Request: GET http://localhost:8004/static/js/auth.js - my_app
+2025-01-31 08:52:54,507 - INFO - Response: 200 Additional Info: GET http://localhost:8004/static/styles/auth.css - my_app
+2025-01-31 08:52:54,507 - INFO - Response: 200 Additional Info: GET http://localhost:8004/static/styles/auth.css - my_app
+2025-01-31 08:52:54,508 - INFO - Response: 200 Additional Info: GET http://localhost:8004/static/js/auth.js - my_app
+2025-01-31 08:52:54,508 - INFO - Response: 200 Additional Info: GET http://localhost:8004/static/js/auth.js - my_app
+2025-01-31 08:53:12,278 - INFO - Request: POST http://localhost:8004/users/register - my_app
+2025-01-31 08:53:12,278 - INFO - Request: POST http://localhost:8004/users/register - my_app
+2025-01-31 08:53:12,445 - INFO - Response: 400 Additional Info: POST http://localhost:8004/users/register - my_app
+2025-01-31 08:53:12,445 - INFO - Response: 400 Additional Info: POST http://localhost:8004/users/register - my_app
+2025-01-31 08:53:21,745 - INFO - Request: GET http://localhost:8004/login - my_app
+2025-01-31 08:53:21,745 - INFO - Request: GET http://localhost:8004/login - my_app
+2025-01-31 08:53:21,749 - INFO - Response: 200 Additional Info: GET http://localhost:8004/login - my_app
+2025-01-31 08:53:21,749 - INFO - Response: 200 Additional Info: GET http://localhost:8004/login - my_app
+2025-01-31 08:53:45,028 - INFO - Request: POST http://localhost:8004/users/login - my_app
+2025-01-31 08:53:45,028 - INFO - Request: POST http://localhost:8004/users/login - my_app
+2025-01-31 08:53:45,034 - INFO - Response: 404 Additional Info: POST http://localhost:8004/users/login - my_app
+2025-01-31 08:53:45,034 - INFO - Response: 404 Additional Info: POST http://localhost:8004/users/login - my_app
+2025-01-31 08:53:50,038 - INFO - Request: POST http://localhost:8004/users/login - my_app
+2025-01-31 08:53:50,038 - INFO - Request: POST http://localhost:8004/users/login - my_app
+2025-01-31 08:53:50,335 - ERROR - Error: POST http://localhost:8004/users/login - my_app
+Traceback (most recent call last):
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\anyio\streams\memory.py", line 111, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\anyio\streams\memory.py", line 106, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\anyio\streams\memory.py", line 124, in receive
+    return receiver.item
+           ^^^^^^^^^^^^^
+AttributeError: 'MemoryObjectItemReceiver' object has no attribute 'item'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\starlette\middleware\base.py", line 157, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\main.py", line 48, in log_requests_and_responses
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\starlette\middleware\base.py", line 163, in call_next
+    raise app_exc
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\starlette\middleware\base.py", line 149, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\starlette\routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\starlette\routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\app\users\endpoints.py", line 24, in login
+    return await session.login_user(user, response, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\app\repositories\user_repository.py", line 190, in login_user
+    access_token = create_access_token(jwt_payload_access)  # secret_key=settings.JWT_PRIVATE_KEY
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\app\auth\utils.py", line 47, in create_access_token
+    encoded_jwt = encode(to_encode, key=SECRET_ACCESS_KEY, algorithm=ALGORITHM, headers={"Authorization": "Bearer"})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\jose\jwt.py", line 53, in encode
+    return jws.sign(claims, key, headers=headers, algorithm=algorithm)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\jose\jws.py", line 39, in sign
+    raise JWSError("Algorithm %s not supported." % algorithm)
+jose.exceptions.JWSError: Algorithm HS-256 not supported.
+2025-01-31 08:53:50,335 - ERROR - Error: POST http://localhost:8004/users/login - my_app
+Traceback (most recent call last):
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\anyio\streams\memory.py", line 111, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\anyio\streams\memory.py", line 106, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\anyio\streams\memory.py", line 124, in receive
+    return receiver.item
+           ^^^^^^^^^^^^^
+AttributeError: 'MemoryObjectItemReceiver' object has no attribute 'item'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\starlette\middleware\base.py", line 157, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\main.py", line 48, in log_requests_and_responses
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\starlette\middleware\base.py", line 163, in call_next
+    raise app_exc
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\starlette\middleware\base.py", line 149, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\starlette\routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\starlette\routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\app\users\endpoints.py", line 24, in login
+    return await session.login_user(user, response, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\app\repositories\user_repository.py", line 190, in login_user
+    access_token = create_access_token(jwt_payload_access)  # secret_key=settings.JWT_PRIVATE_KEY
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\app\auth\utils.py", line 47, in create_access_token
+    encoded_jwt = encode(to_encode, key=SECRET_ACCESS_KEY, algorithm=ALGORITHM, headers={"Authorization": "Bearer"})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\jose\jwt.py", line 53, in encode
+    return jws.sign(claims, key, headers=headers, algorithm=algorithm)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\PycharmProjects\ShareYourIdeasSite\.venv\Lib\site-packages\jose\jws.py", line 39, in sign
+    raise JWSError("Algorithm %s not supported." % algorithm)
+jose.exceptions.JWSError: Algorithm HS-256 not supported.
+2025-01-31 08:54:24,577 - INFO - Request: POST http://localhost:8004/users/login - my_app
+2025-01-31 08:54:24,577 - INFO - Request: POST http://localhost:8004/users/login - my_app
+2025-01-31 08:54:25,017 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/login - my_app
+2025-01-31 08:54:25,017 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/login - my_app
+2025-01-31 08:54:25,032 - INFO - Request: GET http://localhost:8004/profile - my_app
+2025-01-31 08:54:25,032 - INFO - Request: GET http://localhost:8004/profile - my_app
+2025-01-31 08:54:25,058 - INFO - Response: 200 Additional Info: GET http://localhost:8004/profile - my_app
+2025-01-31 08:54:25,058 - INFO - Response: 200 Additional Info: GET http://localhost:8004/profile - my_app
+2025-01-31 08:54:25,087 - INFO - Request: GET http://localhost:8004/static/styles/profile.css - my_app
+2025-01-31 08:54:25,087 - INFO - Request: GET http://localhost:8004/static/styles/profile.css - my_app
+2025-01-31 08:54:25,090 - INFO - Request: GET http://localhost:8004/static/js/profile.js - my_app
+2025-01-31 08:54:25,090 - INFO - Request: GET http://localhost:8004/static/js/profile.js - my_app
+2025-01-31 08:54:25,138 - INFO - Response: 200 Additional Info: GET http://localhost:8004/static/styles/profile.css - my_app
+2025-01-31 08:54:25,138 - INFO - Response: 200 Additional Info: GET http://localhost:8004/static/styles/profile.css - my_app
+2025-01-31 08:54:25,139 - INFO - Response: 200 Additional Info: GET http://localhost:8004/static/js/profile.js - my_app
+2025-01-31 08:54:25,139 - INFO - Response: 200 Additional Info: GET http://localhost:8004/static/js/profile.js - my_app
+2025-01-31 08:54:32,539 - INFO - Request: POST http://localhost:8004/users/upload_ava - my_app
+2025-01-31 08:54:32,539 - INFO - Request: POST http://localhost:8004/users/upload_ava - my_app
+2025-01-31 08:54:32,556 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/upload_ava - my_app
+2025-01-31 08:54:32,556 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/upload_ava - my_app
+2025-01-31 08:54:32,562 - INFO - Request: GET http://localhost:8004/users/avatar/e5b92acd-f3c6-4acf-a168-a86c87228a4bjpg - my_app
+2025-01-31 08:54:32,562 - INFO - Request: GET http://localhost:8004/users/avatar/e5b92acd-f3c6-4acf-a168-a86c87228a4bjpg - my_app
+2025-01-31 08:54:32,575 - INFO - Response: 200 Additional Info: GET http://localhost:8004/users/avatar/e5b92acd-f3c6-4acf-a168-a86c87228a4bjpg - my_app
+2025-01-31 08:54:32,575 - INFO - Response: 200 Additional Info: GET http://localhost:8004/users/avatar/e5b92acd-f3c6-4acf-a168-a86c87228a4bjpg - my_app
+2025-01-31 08:54:34,044 - INFO - Request: GET http://localhost:8004/users/delete_ava - my_app
+2025-01-31 08:54:34,044 - INFO - Request: GET http://localhost:8004/users/delete_ava - my_app
+2025-01-31 08:54:34,049 - INFO - Response: 200 Additional Info: GET http://localhost:8004/users/delete_ava - my_app
+2025-01-31 08:54:34,049 - INFO - Response: 200 Additional Info: GET http://localhost:8004/users/delete_ava - my_app
+2025-01-31 08:54:39,822 - INFO - Request: POST http://localhost:8004/users/upload_ava - my_app
+2025-01-31 08:54:39,822 - INFO - Request: POST http://localhost:8004/users/upload_ava - my_app
+2025-01-31 08:54:39,892 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/upload_ava - my_app
+2025-01-31 08:54:39,892 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/upload_ava - my_app
+2025-01-31 08:54:39,896 - INFO - Request: GET http://localhost:8004/users/avatar/dcdb5289-87b7-4611-9cbc-cd97a23755b4jpg - my_app
+2025-01-31 08:54:39,896 - INFO - Request: GET http://localhost:8004/users/avatar/dcdb5289-87b7-4611-9cbc-cd97a23755b4jpg - my_app
+2025-01-31 08:54:39,910 - INFO - Response: 200 Additional Info: GET http://localhost:8004/users/avatar/dcdb5289-87b7-4611-9cbc-cd97a23755b4jpg - my_app
+2025-01-31 08:54:39,910 - INFO - Response: 200 Additional Info: GET http://localhost:8004/users/avatar/dcdb5289-87b7-4611-9cbc-cd97a23755b4jpg - my_app
+2025-01-31 08:54:42,535 - INFO - Request: GET http://localhost:8004/users/delete_ava - my_app
+2025-01-31 08:54:42,535 - INFO - Request: GET http://localhost:8004/users/delete_ava - my_app
+2025-01-31 08:54:42,541 - INFO - Response: 200 Additional Info: GET http://localhost:8004/users/delete_ava - my_app
+2025-01-31 08:54:42,541 - INFO - Response: 200 Additional Info: GET http://localhost:8004/users/delete_ava - my_app
+2025-01-31 08:54:49,121 - INFO - Request: POST http://localhost:8004/users/upload_ava - my_app
+2025-01-31 08:54:49,121 - INFO - Request: POST http://localhost:8004/users/upload_ava - my_app
+2025-01-31 08:54:49,144 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/upload_ava - my_app
+2025-01-31 08:54:49,144 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/upload_ava - my_app
+2025-01-31 08:54:49,148 - INFO - Request: GET http://localhost:8004/users/avatar/c35283c8-91da-4b18-8fad-cf0f4eb676f5jpg - my_app
+2025-01-31 08:54:49,148 - INFO - Request: GET http://localhost:8004/users/avatar/c35283c8-91da-4b18-8fad-cf0f4eb676f5jpg - my_app
+2025-01-31 08:54:49,158 - INFO - Response: 200 Additional Info: GET http://localhost:8004/users/avatar/c35283c8-91da-4b18-8fad-cf0f4eb676f5jpg - my_app
+2025-01-31 08:54:49,158 - INFO - Response: 200 Additional Info: GET http://localhost:8004/users/avatar/c35283c8-91da-4b18-8fad-cf0f4eb676f5jpg - my_app
+2025-01-31 08:55:46,696 - INFO - Request: POST http://localhost:8004/users/action - my_app
+2025-01-31 08:55:46,696 - INFO - Request: POST http://localhost:8004/users/action - my_app
+2025-01-31 08:55:46,702 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/action - my_app
+2025-01-31 08:55:46,702 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/action - my_app
+2025-01-31 08:55:46,711 - INFO - Request: GET http://localhost:8004/ - my_app
+2025-01-31 08:55:46,711 - INFO - Request: GET http://localhost:8004/ - my_app
+2025-01-31 08:55:46,715 - INFO - Response: 200 Additional Info: GET http://localhost:8004/ - my_app
+2025-01-31 08:55:46,715 - INFO - Response: 200 Additional Info: GET http://localhost:8004/ - my_app
+2025-01-31 08:55:46,740 - INFO - Request: GET http://localhost:8004/static/styles/main_page.css - my_app
+2025-01-31 08:55:46,740 - INFO - Request: GET http://localhost:8004/static/styles/main_page.css - my_app
+2025-01-31 08:55:46,741 - INFO - Response: 304 Additional Info: GET http://localhost:8004/static/styles/main_page.css - my_app
+2025-01-31 08:55:46,741 - INFO - Response: 304 Additional Info: GET http://localhost:8004/static/styles/main_page.css - my_app
+2025-01-31 08:55:46,743 - INFO - Request: GET http://localhost:8004/static/js/main_page.js - my_app
+2025-01-31 08:55:46,743 - INFO - Request: GET http://localhost:8004/static/js/main_page.js - my_app
+2025-01-31 08:55:46,745 - INFO - Response: 304 Additional Info: GET http://localhost:8004/static/js/main_page.js - my_app
+2025-01-31 08:55:46,745 - INFO - Response: 304 Additional Info: GET http://localhost:8004/static/js/main_page.js - my_app
+2025-01-31 08:55:46,747 - INFO - Request: GET http://localhost:8004/static/images/main-background.jpg - my_app
+2025-01-31 08:55:46,747 - INFO - Request: GET http://localhost:8004/static/images/main-background.jpg - my_app
+2025-01-31 08:55:46,750 - INFO - Response: 304 Additional Info: GET http://localhost:8004/static/images/main-background.jpg - my_app
+2025-01-31 08:55:46,750 - INFO - Response: 304 Additional Info: GET http://localhost:8004/static/images/main-background.jpg - my_app
+2025-01-31 08:55:53,447 - INFO - Request: GET http://localhost:8004/ideas/get_ideas_by_description/g - my_app
+2025-01-31 08:55:53,447 - INFO - Request: GET http://localhost:8004/ideas/get_ideas_by_description/g - my_app
+2025-01-31 08:55:53,454 - INFO - Response: 200 Additional Info: GET http://localhost:8004/ideas/get_ideas_by_description/g - my_app
+2025-01-31 08:55:53,454 - INFO - Response: 200 Additional Info: GET http://localhost:8004/ideas/get_ideas_by_description/g - my_app
+2025-01-31 08:55:56,875 - INFO - Request: GET http://localhost:8004/ideas/get_ideas_by_description/a - my_app
+2025-01-31 08:55:56,875 - INFO - Request: GET http://localhost:8004/ideas/get_ideas_by_description/a - my_app
+2025-01-31 08:55:56,881 - INFO - Response: 200 Additional Info: GET http://localhost:8004/ideas/get_ideas_by_description/a - my_app
+2025-01-31 08:55:56,881 - INFO - Response: 200 Additional Info: GET http://localhost:8004/ideas/get_ideas_by_description/a - my_app
+2025-01-31 08:56:15,618 - INFO - Request: POST http://localhost:8004/users/action - my_app
+2025-01-31 08:56:15,618 - INFO - Request: POST http://localhost:8004/users/action - my_app
+2025-01-31 08:56:15,621 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/action - my_app
+2025-01-31 08:56:15,621 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/action - my_app
+2025-01-31 08:56:27,056 - INFO - Request: POST http://localhost:8004/users/action - my_app
+2025-01-31 08:56:27,056 - INFO - Request: POST http://localhost:8004/users/action - my_app
+2025-01-31 08:56:27,060 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/action - my_app
+2025-01-31 08:56:27,060 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/action - my_app
+2025-01-31 08:56:27,063 - INFO - Request: GET http://localhost:8004/ideas/all_ideas - my_app
+2025-01-31 08:56:27,063 - INFO - Request: GET http://localhost:8004/ideas/all_ideas - my_app
+2025-01-31 08:56:27,065 - INFO - Response: 403 Additional Info: GET http://localhost:8004/ideas/all_ideas - my_app
+2025-01-31 08:56:27,065 - INFO - Response: 403 Additional Info: GET http://localhost:8004/ideas/all_ideas - my_app
+2025-01-31 08:56:29,851 - INFO - Request: POST http://localhost:8004/users/action - my_app
+2025-01-31 08:56:29,851 - INFO - Request: POST http://localhost:8004/users/action - my_app
+2025-01-31 08:56:29,855 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/action - my_app
+2025-01-31 08:56:29,855 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/action - my_app
+2025-01-31 08:56:29,857 - INFO - Request: GET http://localhost:8004/ideas/all_ideas - my_app
+2025-01-31 08:56:29,857 - INFO - Request: GET http://localhost:8004/ideas/all_ideas - my_app
+2025-01-31 08:56:29,860 - INFO - Response: 403 Additional Info: GET http://localhost:8004/ideas/all_ideas - my_app
+2025-01-31 08:56:29,860 - INFO - Response: 403 Additional Info: GET http://localhost:8004/ideas/all_ideas - my_app
+2025-01-31 08:58:33,655 - INFO - Request: GET http://localhost:8004/docs - my_app
+2025-01-31 08:58:33,655 - INFO - Request: GET http://localhost:8004/docs - my_app
+2025-01-31 08:58:33,655 - INFO - Response: 200 Additional Info: GET http://localhost:8004/docs - my_app
+2025-01-31 08:58:33,655 - INFO - Response: 200 Additional Info: GET http://localhost:8004/docs - my_app
+2025-01-31 08:58:33,835 - INFO - Request: GET http://localhost:8004/openapi.json - my_app
+2025-01-31 08:58:33,835 - INFO - Request: GET http://localhost:8004/openapi.json - my_app
+2025-01-31 08:58:33,856 - INFO - Response: 200 Additional Info: GET http://localhost:8004/openapi.json - my_app
+2025-01-31 08:58:33,856 - INFO - Response: 200 Additional Info: GET http://localhost:8004/openapi.json - my_app
+2025-01-31 08:59:10,078 - INFO - Request: GET http://localhost:8004/users/give_rights/alessandro - my_app
+2025-01-31 08:59:10,078 - INFO - Request: GET http://localhost:8004/users/give_rights/alessandro - my_app
+2025-01-31 08:59:10,083 - INFO - Response: 200 Additional Info: GET http://localhost:8004/users/give_rights/alessandro - my_app
+2025-01-31 08:59:10,083 - INFO - Response: 200 Additional Info: GET http://localhost:8004/users/give_rights/alessandro - my_app
+2025-01-31 08:59:18,109 - INFO - Request: GET http://localhost:8004/ - my_app
+2025-01-31 08:59:18,109 - INFO - Request: GET http://localhost:8004/ - my_app
+2025-01-31 08:59:18,110 - INFO - Response: 200 Additional Info: GET http://localhost:8004/ - my_app
+2025-01-31 08:59:18,110 - INFO - Response: 200 Additional Info: GET http://localhost:8004/ - my_app
+2025-01-31 08:59:18,143 - INFO - Request: GET http://localhost:8004/static/styles/main_page.css - my_app
+2025-01-31 08:59:18,143 - INFO - Request: GET http://localhost:8004/static/styles/main_page.css - my_app
+2025-01-31 08:59:18,144 - INFO - Request: GET http://localhost:8004/static/js/main_page.js - my_app
+2025-01-31 08:59:18,144 - INFO - Request: GET http://localhost:8004/static/js/main_page.js - my_app
+2025-01-31 08:59:18,146 - INFO - Response: 304 Additional Info: GET http://localhost:8004/static/styles/main_page.css - my_app
+2025-01-31 08:59:18,146 - INFO - Response: 304 Additional Info: GET http://localhost:8004/static/styles/main_page.css - my_app
+2025-01-31 08:59:18,147 - INFO - Response: 304 Additional Info: GET http://localhost:8004/static/js/main_page.js - my_app
+2025-01-31 08:59:18,147 - INFO - Response: 304 Additional Info: GET http://localhost:8004/static/js/main_page.js - my_app
+2025-01-31 08:59:18,153 - INFO - Request: GET http://localhost:8004/static/images/main-background.jpg - my_app
+2025-01-31 08:59:18,153 - INFO - Request: GET http://localhost:8004/static/images/main-background.jpg - my_app
+2025-01-31 08:59:18,154 - INFO - Response: 304 Additional Info: GET http://localhost:8004/static/images/main-background.jpg - my_app
+2025-01-31 08:59:18,154 - INFO - Response: 304 Additional Info: GET http://localhost:8004/static/images/main-background.jpg - my_app
+2025-01-31 08:59:20,149 - INFO - Request: POST http://localhost:8004/users/action - my_app
+2025-01-31 08:59:20,149 - INFO - Request: POST http://localhost:8004/users/action - my_app
+2025-01-31 08:59:20,153 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/action - my_app
+2025-01-31 08:59:20,153 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/action - my_app
+2025-01-31 08:59:20,156 - INFO - Request: GET http://localhost:8004/ideas/all_ideas - my_app
+2025-01-31 08:59:20,156 - INFO - Request: GET http://localhost:8004/ideas/all_ideas - my_app
+2025-01-31 08:59:20,162 - INFO - Response: 200 Additional Info: GET http://localhost:8004/ideas/all_ideas - my_app
+2025-01-31 08:59:20,162 - INFO - Response: 200 Additional Info: GET http://localhost:8004/ideas/all_ideas - my_app
+2025-01-31 08:59:23,125 - INFO - Request: GET http://localhost:8004/ideas/all_ideas - my_app
+2025-01-31 08:59:23,125 - INFO - Request: GET http://localhost:8004/ideas/all_ideas - my_app
+2025-01-31 08:59:23,129 - INFO - Response: 200 Additional Info: GET http://localhost:8004/ideas/all_ideas - my_app
+2025-01-31 08:59:23,129 - INFO - Response: 200 Additional Info: GET http://localhost:8004/ideas/all_ideas - my_app
+2025-01-31 08:59:30,426 - INFO - Request: GET http://localhost:8004/ideas/all_ideas - my_app
+2025-01-31 08:59:30,426 - INFO - Request: GET http://localhost:8004/ideas/all_ideas - my_app
+2025-01-31 08:59:30,430 - INFO - Response: 200 Additional Info: GET http://localhost:8004/ideas/all_ideas - my_app
+2025-01-31 08:59:30,430 - INFO - Response: 200 Additional Info: GET http://localhost:8004/ideas/all_ideas - my_app
+2025-01-31 09:00:03,107 - INFO - Request: POST http://localhost:8004/users/action - my_app
+2025-01-31 09:00:03,107 - INFO - Request: POST http://localhost:8004/users/action - my_app
+2025-01-31 09:00:03,112 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/action - my_app
+2025-01-31 09:00:03,112 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/action - my_app
+2025-01-31 09:00:21,001 - INFO - Request: POST http://localhost:8004/ideas/add_idea - my_app
+2025-01-31 09:00:21,001 - INFO - Request: POST http://localhost:8004/ideas/add_idea - my_app
+2025-01-31 09:00:21,007 - INFO - Response: 401 Additional Info: POST http://localhost:8004/ideas/add_idea - my_app
+2025-01-31 09:00:21,007 - INFO - Response: 401 Additional Info: POST http://localhost:8004/ideas/add_idea - my_app
+2025-01-31 09:00:30,977 - INFO - Request: GET http://localhost:8004/login - my_app
+2025-01-31 09:00:30,977 - INFO - Request: GET http://localhost:8004/login - my_app
+2025-01-31 09:00:30,980 - INFO - Response: 200 Additional Info: GET http://localhost:8004/login - my_app
+2025-01-31 09:00:30,980 - INFO - Response: 200 Additional Info: GET http://localhost:8004/login - my_app
+2025-01-31 09:00:31,009 - INFO - Request: GET http://localhost:8004/static/styles/auth.css - my_app
+2025-01-31 09:00:31,009 - INFO - Request: GET http://localhost:8004/static/styles/auth.css - my_app
+2025-01-31 09:00:31,011 - INFO - Request: GET http://localhost:8004/static/js/auth.js - my_app
+2025-01-31 09:00:31,011 - INFO - Request: GET http://localhost:8004/static/js/auth.js - my_app
+2025-01-31 09:00:31,013 - INFO - Response: 304 Additional Info: GET http://localhost:8004/static/styles/auth.css - my_app
+2025-01-31 09:00:31,013 - INFO - Response: 304 Additional Info: GET http://localhost:8004/static/styles/auth.css - my_app
+2025-01-31 09:00:31,014 - INFO - Response: 304 Additional Info: GET http://localhost:8004/static/js/auth.js - my_app
+2025-01-31 09:00:31,014 - INFO - Response: 304 Additional Info: GET http://localhost:8004/static/js/auth.js - my_app
+2025-01-31 09:00:32,225 - INFO - Request: POST http://localhost:8004/users/login - my_app
+2025-01-31 09:00:32,225 - INFO - Request: POST http://localhost:8004/users/login - my_app
+2025-01-31 09:00:32,503 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/login - my_app
+2025-01-31 09:00:32,503 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/login - my_app
+2025-01-31 09:00:32,512 - INFO - Request: GET http://localhost:8004/profile - my_app
+2025-01-31 09:00:32,512 - INFO - Request: GET http://localhost:8004/profile - my_app
+2025-01-31 09:00:32,518 - INFO - Response: 200 Additional Info: GET http://localhost:8004/profile - my_app
+2025-01-31 09:00:32,518 - INFO - Response: 200 Additional Info: GET http://localhost:8004/profile - my_app
+2025-01-31 09:00:32,553 - INFO - Request: GET http://localhost:8004/static/styles/profile.css - my_app
+2025-01-31 09:00:32,553 - INFO - Request: GET http://localhost:8004/static/styles/profile.css - my_app
+2025-01-31 09:00:32,556 - INFO - Response: 304 Additional Info: GET http://localhost:8004/static/styles/profile.css - my_app
+2025-01-31 09:00:32,556 - INFO - Response: 304 Additional Info: GET http://localhost:8004/static/styles/profile.css - my_app
+2025-01-31 09:00:32,557 - INFO - Request: GET http://localhost:8004/static/js/profile.js - my_app
+2025-01-31 09:00:32,557 - INFO - Request: GET http://localhost:8004/static/js/profile.js - my_app
+2025-01-31 09:00:32,559 - INFO - Response: 304 Additional Info: GET http://localhost:8004/static/js/profile.js - my_app
+2025-01-31 09:00:32,559 - INFO - Response: 304 Additional Info: GET http://localhost:8004/static/js/profile.js - my_app
+2025-01-31 09:00:32,567 - INFO - Request: GET http://localhost:8004/users/avatar/c35283c8-91da-4b18-8fad-cf0f4eb676f5jpg - my_app
+2025-01-31 09:00:32,567 - INFO - Request: GET http://localhost:8004/users/avatar/c35283c8-91da-4b18-8fad-cf0f4eb676f5jpg - my_app
+2025-01-31 09:00:32,575 - INFO - Response: 200 Additional Info: GET http://localhost:8004/users/avatar/c35283c8-91da-4b18-8fad-cf0f4eb676f5jpg - my_app
+2025-01-31 09:00:32,575 - INFO - Response: 200 Additional Info: GET http://localhost:8004/users/avatar/c35283c8-91da-4b18-8fad-cf0f4eb676f5jpg - my_app
+2025-01-31 09:00:35,334 - INFO - Request: POST http://localhost:8004/users/action - my_app
+2025-01-31 09:00:35,334 - INFO - Request: POST http://localhost:8004/users/action - my_app
+2025-01-31 09:00:35,340 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/action - my_app
+2025-01-31 09:00:35,340 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/action - my_app
+2025-01-31 09:00:35,344 - INFO - Request: GET http://localhost:8004/ideas/get_user_ideas - my_app
+2025-01-31 09:00:35,344 - INFO - Request: GET http://localhost:8004/ideas/get_user_ideas - my_app
+2025-01-31 09:00:35,348 - INFO - Response: 200 Additional Info: GET http://localhost:8004/ideas/get_user_ideas - my_app
+2025-01-31 09:00:35,348 - INFO - Response: 200 Additional Info: GET http://localhost:8004/ideas/get_user_ideas - my_app
+2025-01-31 09:00:39,217 - INFO - Request: POST http://localhost:8004/users/action - my_app
+2025-01-31 09:00:39,217 - INFO - Request: POST http://localhost:8004/users/action - my_app
+2025-01-31 09:00:39,220 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/action - my_app
+2025-01-31 09:00:39,220 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/action - my_app
+2025-01-31 09:00:39,223 - INFO - Request: GET http://localhost:8004/ideas/get_user_ideas - my_app
+2025-01-31 09:00:39,223 - INFO - Request: GET http://localhost:8004/ideas/get_user_ideas - my_app
+2025-01-31 09:00:39,229 - INFO - Response: 200 Additional Info: GET http://localhost:8004/ideas/get_user_ideas - my_app
+2025-01-31 09:00:39,229 - INFO - Response: 200 Additional Info: GET http://localhost:8004/ideas/get_user_ideas - my_app
+2025-01-31 09:00:52,905 - INFO - Request: POST http://localhost:8004/users/action - my_app
+2025-01-31 09:00:52,905 - INFO - Request: POST http://localhost:8004/users/action - my_app
+2025-01-31 09:00:52,910 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/action - my_app
+2025-01-31 09:00:52,910 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/action - my_app
+2025-01-31 09:00:52,914 - INFO - Request: GET http://localhost:8004/ideas/get_user_ideas - my_app
+2025-01-31 09:00:52,914 - INFO - Request: GET http://localhost:8004/ideas/get_user_ideas - my_app
+2025-01-31 09:00:52,919 - INFO - Response: 200 Additional Info: GET http://localhost:8004/ideas/get_user_ideas - my_app
+2025-01-31 09:00:52,919 - INFO - Response: 200 Additional Info: GET http://localhost:8004/ideas/get_user_ideas - my_app
+2025-01-31 09:01:02,734 - INFO - Request: POST http://localhost:8004/users/action - my_app
+2025-01-31 09:01:02,734 - INFO - Request: POST http://localhost:8004/users/action - my_app
+2025-01-31 09:01:02,738 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/action - my_app
+2025-01-31 09:01:02,738 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/action - my_app
+2025-01-31 09:01:02,757 - INFO - Request: GET http://localhost:8004/ - my_app
+2025-01-31 09:01:02,757 - INFO - Request: GET http://localhost:8004/ - my_app
+2025-01-31 09:01:02,758 - INFO - Response: 200 Additional Info: GET http://localhost:8004/ - my_app
+2025-01-31 09:01:02,758 - INFO - Response: 200 Additional Info: GET http://localhost:8004/ - my_app
+2025-01-31 09:01:06,983 - INFO - Request: POST http://localhost:8004/users/action - my_app
+2025-01-31 09:01:06,983 - INFO - Request: POST http://localhost:8004/users/action - my_app
+2025-01-31 09:01:06,991 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/action - my_app
+2025-01-31 09:01:06,991 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/action - my_app
+2025-01-31 09:01:18,985 - INFO - Request: POST http://localhost:8004/ideas/add_idea - my_app
+2025-01-31 09:01:18,985 - INFO - Request: POST http://localhost:8004/ideas/add_idea - my_app
+2025-01-31 09:01:19,097 - INFO - Response: 200 Additional Info: POST http://localhost:8004/ideas/add_idea - my_app
+2025-01-31 09:01:19,097 - INFO - Response: 200 Additional Info: POST http://localhost:8004/ideas/add_idea - my_app
+2025-01-31 09:01:38,485 - INFO - Request: GET http://localhost:8004/ideas/get_ideas_by_description/s - my_app
+2025-01-31 09:01:38,485 - INFO - Request: GET http://localhost:8004/ideas/get_ideas_by_description/s - my_app
+2025-01-31 09:01:38,487 - INFO - Response: 404 Additional Info: GET http://localhost:8004/ideas/get_ideas_by_description/s - my_app
+2025-01-31 09:01:38,487 - INFO - Response: 404 Additional Info: GET http://localhost:8004/ideas/get_ideas_by_description/s - my_app
+2025-01-31 09:01:40,379 - INFO - Request: GET http://localhost:8004/login - my_app
+2025-01-31 09:01:40,379 - INFO - Request: GET http://localhost:8004/login - my_app
+2025-01-31 09:01:40,381 - INFO - Response: 200 Additional Info: GET http://localhost:8004/login - my_app
+2025-01-31 09:01:40,381 - INFO - Response: 200 Additional Info: GET http://localhost:8004/login - my_app
+2025-01-31 09:01:42,139 - INFO - Request: POST http://localhost:8004/users/login - my_app
+2025-01-31 09:01:42,139 - INFO - Request: POST http://localhost:8004/users/login - my_app
+2025-01-31 09:01:42,408 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/login - my_app
+2025-01-31 09:01:42,408 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/login - my_app
+2025-01-31 09:01:42,417 - INFO - Request: GET http://localhost:8004/profile - my_app
+2025-01-31 09:01:42,417 - INFO - Request: GET http://localhost:8004/profile - my_app
+2025-01-31 09:01:42,423 - INFO - Response: 200 Additional Info: GET http://localhost:8004/profile - my_app
+2025-01-31 09:01:42,423 - INFO - Response: 200 Additional Info: GET http://localhost:8004/profile - my_app
+2025-01-31 09:01:42,464 - INFO - Request: GET http://localhost:8004/users/avatar/c35283c8-91da-4b18-8fad-cf0f4eb676f5jpg - my_app
+2025-01-31 09:01:42,464 - INFO - Request: GET http://localhost:8004/users/avatar/c35283c8-91da-4b18-8fad-cf0f4eb676f5jpg - my_app
+2025-01-31 09:01:42,468 - INFO - Response: 200 Additional Info: GET http://localhost:8004/users/avatar/c35283c8-91da-4b18-8fad-cf0f4eb676f5jpg - my_app
+2025-01-31 09:01:42,468 - INFO - Response: 200 Additional Info: GET http://localhost:8004/users/avatar/c35283c8-91da-4b18-8fad-cf0f4eb676f5jpg - my_app
+2025-01-31 09:01:44,721 - INFO - Request: POST http://localhost:8004/users/action - my_app
+2025-01-31 09:01:44,721 - INFO - Request: POST http://localhost:8004/users/action - my_app
+2025-01-31 09:01:44,726 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/action - my_app
+2025-01-31 09:01:44,726 - INFO - Response: 200 Additional Info: POST http://localhost:8004/users/action - my_app
+2025-01-31 09:01:44,733 - INFO - Request: GET http://localhost:8004/ - my_app
+2025-01-31 09:01:44,733 - INFO - Request: GET http://localhost:8004/ - my_app
+2025-01-31 09:01:44,735 - INFO - Response: 200 Additional Info: GET http://localhost:8004/ - my_app
+2025-01-31 09:01:44,735 - INFO - Response: 200 Additional Info: GET http://localhost:8004/ - my_app
+2025-01-31 09:01:44,765 - INFO - Request: GET http://localhost:8004/static/styles/main_page.css - my_app
+2025-01-31 09:01:44,765 - INFO - Request: GET http://localhost:8004/static/styles/main_page.css - my_app
+2025-01-31 09:01:44,766 - INFO - Request: GET http://localhost:8004/static/js/main_page.js - my_app
+2025-01-31 09:01:44,766 - INFO - Request: GET http://localhost:8004/static/js/main_page.js - my_app
+2025-01-31 09:01:44,768 - INFO - Response: 304 Additional Info: GET http://localhost:8004/static/styles/main_page.css - my_app
+2025-01-31 09:01:44,768 - INFO - Response: 304 Additional Info: GET http://localhost:8004/static/styles/main_page.css - my_app
+2025-01-31 09:01:44,768 - INFO - Response: 304 Additional Info: GET http://localhost:8004/static/js/main_page.js - my_app
+2025-01-31 09:01:44,768 - INFO - Response: 304 Additional Info: GET http://localhost:8004/static/js/main_page.js - my_app
+2025-01-31 09:01:44,774 - INFO - Request: GET http://localhost:8004/static/images/main-background.jpg - my_app
+2025-01-31 09:01:44,774 - INFO - Request: GET http://localhost:8004/static/images/main-background.jpg - my_app
+2025-01-31 09:01:44,779 - INFO - Response: 304 Additional Info: GET http://localhost:8004/static/images/main-background.jpg - my_app
+2025-01-31 09:01:44,779 - INFO - Response: 304 Additional Info: GET http://localhost:8004/static/images/main-background.jpg - my_app
+2025-01-31 09:01:47,065 - INFO - Request: GET http://localhost:8004/ideas/get_ideas_by_description/s - my_app
+2025-01-31 09:01:47,065 - INFO - Request: GET http://localhost:8004/ideas/get_ideas_by_description/s - my_app
+2025-01-31 09:01:47,069 - INFO - Response: 200 Additional Info: GET http://localhost:8004/ideas/get_ideas_by_description/s - my_app
+2025-01-31 09:01:47,069 - INFO - Response: 200 Additional Info: GET http://localhost:8004/ideas/get_ideas_by_description/s - my_app
