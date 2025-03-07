@@ -67,7 +67,7 @@ class IdeaRepository(AbstractIdeaRepository):
             await self.session.rollback()
             return JSONResponse(content=f"something went wrong, details: {e.__str__()}",
                                 status_code=status.HTTP_400_BAD_REQUEST)
-        return {"info": f"{access_data["nickname"]} has just created the idea with title {idea.title}",
+        return {"info": f"{access_data['nickname']} has just created the idea with title {idea.title}",
                 "description": idea.description}
 
     async def get_ideas(self, access_data: dict | bool = Depends(get_access_token)):
@@ -122,10 +122,10 @@ class IdeaRepository(AbstractIdeaRepository):
         query.updated_at = datetime.now(tz=pytz.UTC)
         try:
             await self.session.commit()
-            return f"{access_data["nickname"]} has just updated the idea with title {idea.title}"
+            return f"{access_data['nickname']} has just updated the idea with title {idea.title}"
         except Exception as e:
             await self.session.rollback()
-            raise HTTPException(status_code=status.HTTP_400_BAD_REQUESTM, detail={e.__name__: e.__str__()})
+            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail={e.__name__: e.__str__()})
 
     async def delete_idea(self, title: str, access_data: dict | bool = Depends(get_access_token)):
         if not access_data:
@@ -139,7 +139,7 @@ class IdeaRepository(AbstractIdeaRepository):
             await self.session.delete(query)
             await self.session.commit()
             return JSONResponse(status_code=status.HTTP_200_OK,
-                                content=f"{access_data["nickname"]} has just deleted the idea: {title}")
+                                content=f"{access_data['nickname']} has just deleted the idea: {title}")
         except Exception as e:
             await self.session.rollback()
             raise HTTPException(status_code=status.HTTP_400_BAD_REQUESTM, detail=e.__str__())

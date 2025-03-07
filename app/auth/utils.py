@@ -1,8 +1,8 @@
 import re
 
 from fastapi import HTTPException
-from jose import JWTError
-from jose.jwt import encode, decode
+from authlib.jose import jwt
+
 
 from passlib.context import CryptContext
 
@@ -43,14 +43,24 @@ SECRET_ACCESS_KEY = settings.PRIVATE_ACCESS_KEY
 SECRET_REFRESH_KEY = settings.PRIVATE_REFRESH_KEY
 ALGORITHM = settings.JWT_ALGORITHM
 def create_access_token(data: dict):
-    to_encode = data.copy()
-    encoded_jwt = encode(to_encode, key=SECRET_ACCESS_KEY, algorithm=ALGORITHM, headers={"Authorization": "Bearer"})
-    return encoded_jwt
+    access_payload = data.copy()
+    headers = {"alg": ALGORITHM}
+    access_token = jwt.encode(
+        header=headers,
+        payload=access_payload,
+        key=SECRET_ACCESS_KEY,
+    )
+    return access_token.decode("utf-8")
 
 def create_refresh_token(data: dict):
-    to_encode = data.copy()
-    encoded_jwt = encode(to_encode, key=SECRET_REFRESH_KEY, algorithm=ALGORITHM)
-    return encoded_jwt
+    refresh_payload = data.copy()
+    headers = {"alg": ALGORITHM}
+    refresh_token = jwt.encode(
+        header=headers,
+        payload=refresh_payload,
+        key=SECRET_REFRESH_KEY,
+    )
+    return refresh_token.decode("utf-8")
 
 
 
@@ -59,8 +69,8 @@ async def get_access_token(request: Request):
     if not token:
         return False
     try:
-        payload = decode(token, SECRET_ACCESS_KEY, algorithms=ALGORITHM)
-    except JWTError:
+        payload = jwt.decode(token, SECRET_ACCESS_KEY)
+    except :
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Token is not valid")
 
     user_id = payload.get("id")
@@ -77,8 +87,8 @@ async def get_refresh_token(request: Request):
     if not token:
         return False
     try:
-        payload = decode(token, SECRET_REFRESH_KEY, algorithms=ALGORITHM)
-    except JWTError:
+        payload = jwt.decode(token, SECRET_REFRESH_KEY)
+    except Exception:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Token is not valid")
     user_id = payload.get("id")
     nickname = payload.get("nickname")
@@ -94,17 +104,3 @@ async def get_refresh_token(request: Request):
 
 
 
-
-
-#async def delete_expired_refresh_tokens(db: AsyncSession):
-#    """Deletes expired refresh tokens from the database."""
-#    try:
-#        now = func.now()
-#        await db.execute(
-#            update(User)
-#            .where(User.expires_at < now)
-#            .values(is_logged_in=False, refresh_token="None"))  # Set token to 'None', and updates expires_at
-#        await db.commit()
- #   except Exception as e:
-#        print(f"Error deleting expired tokens: {e}")
-#        await db.rollback()

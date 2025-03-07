@@ -130,9 +130,10 @@ async function GetMyIdeas() {
   const ideasBackground = document.querySelector(".ideas-background");
   const closeButton = document.querySelector(".close-ideas");
   if (!ideasBackground || !closeButton) {
-    console.error("Elements with IDs 'ideas-background' or 'close-ideas' not found.");
+    console.error("Элементы с классами 'ideas-background' или 'close-ideas' не найдены.");
     return;
   }
+
   try {
     const response = await fetch("/users/action", {
       method: "POST",
@@ -140,47 +141,58 @@ async function GetMyIdeas() {
         "Content-Type": "application/json"
       },
     });
-    if (response.status == 401) {
+
+    if (response.status === 401) {
       window.location.href = "/";
-      console.error("waiting time exceeded")
-      alert("waiting time exceeded. Please log in to continue");
+      console.error("время ожидания истекло");
+      alert("время ожидания истекло. Пожалуйста, войдите в систему для продолжения");
       return;
     }
-    result = document.querySelector(".result")
+
+    const result = document.querySelector(".result");
     result.innerHTML = "";
     ideasBackground.style.display = "block";
-    closeButton.addEventListener("click", () => {
+
+    closeButton.onclick = () => {
       ideasBackground.style.display = "none";
-    })
+    };
+
     const data = await fetch("/ideas/get_user_ideas", {
       method: "GET",
       headers: {
         "Content-Type": "application/json"
       },
     });
-    if (data.status == 401) {
+
+    if (data.status === 401) {
       window.location.href = "/";
-      console.error("waiting time exceeded")
-      alert("waiting time exceeded. Please log in to continue");
+      console.error("время ожидания истекло");
+      alert("время ожидания истекло. Пожалуйста, войдите в систему для продолжения");
       return;
     }
-    ideas = await data.json()
-    if (data.status == 404) {
-        alert("User has no ideas")
-        return;
+
+    if (data.status === 404) {
+      alert("У пользователя нет идей");
+      return;
     }
 
+    if (data.status !== 200) {
+      console.error("Ошибка при получении идей", data.status);
+      alert("Что-то пошло не так(");
+      return;
+    }
+
+    const ideas = await data.json();
     ideas.forEach(idea => {
       const ideaDiv = document.createElement("div");
-      ideaDiv.classList.add("idea-block-style")
+      ideaDiv.classList.add("idea-block-style");
       ideaDiv.innerHTML =
         `<p><strong>Title:</strong> ${idea.title}</p>
-  <p><strong>Description:</strong> ${idea.description}</p>
-  <p><strong>Time of creation:</strong> ${idea.created_at}</p>
-  <p><strong>Author's nickname:</strong> ${idea.nickname}</p>`;
+         <p><strong>Description:</strong> ${idea.description}</p>
+         <p><strong>Time of creation:</strong> ${idea.created_at}</p>
+         <p><strong>Author's nickname:</strong> ${idea.nickname}</p>`;
       result.appendChild(ideaDiv);
-    })
-
+    });
 
   } catch (e) {
     console.error("Error", e)

@@ -11,12 +11,12 @@ class Settings(BaseSettings):
     DB_USER: str
     DB_NAME: str
     DB_PASS: str
-    DATABASE_URL: str
+    DB_URL: str
     PRIVATE_ACCESS_KEY: str
     PRIVATE_REFRESH_KEY: str
     ACCESS_TOKEN_EXPIRES_IN: int
     REFRESH_TOKEN_EXPIRES_IN: int
-    JWT_ALGORITHM: str
+    JWT_ALGORITHM: str = "HS256"
 
 
     model_config = SettingsConfigDict(env_file=".env")
@@ -28,7 +28,7 @@ settings = Settings()
 
 
 
-engine = create_async_engine(url=settings.DATABASE_URL, echo=True, future=True)
+engine = create_async_engine(url=settings.DB_URL, echo=True, future=True)
 async_session_maker = async_sessionmaker(bind=engine, class_=AsyncSession)
 
 async def get_async_session():

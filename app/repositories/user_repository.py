@@ -117,7 +117,6 @@ class UserRepository(AbstractUserRepository):
                 detail='Password must be > 8, contain at least one uppercase letter and must contain one lowercase letter')
         try:
             user_id = str(uuid.uuid4())
-            #  Hash the password
             jwt_payload_access = {
                 "id": user_id,
                 "nickname": payload.nickname,
@@ -129,14 +128,13 @@ class UserRepository(AbstractUserRepository):
                 "name": payload.first_name,
                 "email": payload.email,
                 "role": jsonable_encoder(payload.role),
-                "password": payload.password
             }
             payload.password = hash_password(payload.password)
             payload.id = user_id
             payload.role = "user"
 
             del payload.passwordConfirm
-            payload.email = payload.email.lower()
+            payload.email = payload.email
             access_token = create_access_token(jwt_payload_access)  # secret_key=settings.JWT_PRIVATE_KEY
             refresh_token = create_refresh_token(jwt_payload_refresh)
             to_add = User(**payload.model_dump())
@@ -150,10 +148,11 @@ class UserRepository(AbstractUserRepository):
 
             return f"Welcome aboard, {to_add.first_name} {to_add.last_name}!"
         except Exception as e:
-            error = type(e).__name__
-            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,
-                                detail={"Error": error, "full details": e.__str__()}
-                                )
+            raise
+            # error = type(e)
+            # raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,
+            #                     detail={"Error": error, "full details": e.__str__()}
+            #                     )
 
     async def login_user(self, creds: UserLogin, response: Response, request: Request):
         if not creds:
@@ -185,7 +184,6 @@ class UserRepository(AbstractUserRepository):
             "name": user.first_name,
             "email": user.email,
             "role": jsonable_encoder(user.role),
-            "password": jsonable_encoder(user.password)
         }
         access_token = create_access_token(jwt_payload_access)  # secret_key=settings.JWT_PRIVATE_KEY
         refresh_token = create_refresh_token(jwt_payload_refresh)
