@@ -175,4 +175,4 @@ class IdeaRepository(AbstractIdeaRepository):
         ideas = ideas.scalars().all()
         if not ideas:
             raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User has no ideas")
-        return {"ideas": ideas, "nickname": jsonable_encoder(user.nickname)}
+        return ideas

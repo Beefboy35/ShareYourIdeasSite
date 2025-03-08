@@ -17,7 +17,7 @@ class Settings(BaseSettings):
     ACCESS_TOKEN_EXPIRES_IN: int
     REFRESH_TOKEN_EXPIRES_IN: int
     JWT_ALGORITHM: str = "HS256"
-
+    SESSION_KEY: str
 
     model_config = SettingsConfigDict(env_file=".env")
 
